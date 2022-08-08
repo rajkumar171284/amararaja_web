@@ -1,0 +1,20 @@
+<mat-toolbar color="secondary">
+
+    <button mat-raised-button  (click)="openDialog()" class="btn-theme1">
+      Add New
+    </button>
+  
+  </mat-toolbar>
+  <mat-tab-group #tabGroup mat-align-tabs="start" animationDuration="0ms" (selectedTabChange)="tabChanged($event)">
+    <mat-tab label="Alerts">
+      <app-alert-list ></app-alert-list>
+  
+    </mat-tab>
+   
+  
+    <!-- <mat-tab appWidgetAccessIf label="Create">
+      
+    </mat-tab> -->
+    
+  
+  </mat-tab-group>

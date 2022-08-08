@@ -1,0 +1,90 @@
+<div class="example-header" role="banner">
+  <div class="logodiv">
+
+    <img width="40" alt="Angular Logo" src="assets/logo.png" />
+  </div>
+  <div class="navhead">
+    <span>Fire Hydrant System</span>
+  </div>
+
+  <div class="logo-right logo">
+    <span>
+      Hi,{{session && session.LOGIN_NAME?session.LOGIN_NAME:'User'}}
+    </span>
+       
+      <mat-icon  (click)="logOut()">logout</mat-icon>
+    
+  </div>
+
+</div>
+<!-- <div class="sidebar">
+  <mat-list role="list" style="padding-top: 0;">
+          
+    <mat-list-item routerLink="{{a.url}}" routerLinkActive="activelist" (click)="routePath(a)" *ngFor="let a of routes" role="listitem">
+    
+      <a  mat-list-item>
+        <mat-icon> {{a.iconname}}</mat-icon>
+        {{a.label}}
+      </a>
+    </mat-list-item>
+
+    </mat-list>
+</div>
+
+<div class="wrapper">
+  <router-outlet></router-outlet>
+</div> -->
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" opened class="example-sidenav" [fixedInViewport]="options.value.fixed"
+    [fixedTopGap]="options.value.top" [fixedBottomGap]="options.value.bottom">
+
+    <mat-list role="list" style="padding-top: 0;">
+    
+    
+      <mat-nav-list style="padding-left: 10px; padding-right: 10px;">
+        <a mat-list-item matTooltip="Dashboard" routerLink="dashboard" routerLinkActive="activelist">
+          <mat-icon> bar_chart</mat-icon>
+          <!-- Dashboard -->
+        </a>
+        <!-- <a *appAccessrights="false" mat-list-item matTooltip="Admin Panel" routerLink="/home/admin-panel"
+          routerLinkActive="activelist">
+          <mat-icon> account_box</mat-icon>
+        </a>
+
+        <a *appAccessrights="true" mat-list-item matTooltip="Config Panel" routerLink="/home/control-panel"
+          routerLinkActive="active-list-item">
+          <mat-icon> settings</mat-icon>
+
+         
+        </a> -->
+        <a mat-list-item matTooltip="Alerts" routerLink="alert-panel"
+          routerLinkActive="active-list-item">
+          <mat-icon> add_alert</mat-icon>
+
+         
+        </a>
+        <!-- <a mat-list-item matTooltip="Reports" routerLink="/home/reports" routerLinkActive="active-list-item">
+          <mat-icon>reorder</mat-icon>
+        </a>
+        <a *appAccessrights="false"  (click)="openDialog()" mat-list-item matTooltip="My Profile" routerLinkActive="active-list-item">
+          <mat-icon>supervised_user_circle</mat-icon>
+        </a> -->
+
+       
+      </mat-nav-list>
+
+
+     
+    </mat-list>
+
+
+  </mat-sidenav>
+
+
+  <mat-sidenav-content>
+
+   
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

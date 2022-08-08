@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import '~font-awesome/css/font-awesome.css'; */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~primeicons/primeicons.css';
+/* @import '~primeng-lts/resources/themes/saga-blue/theme.css'; */
+@import '~primeng-lts/resources/primeng.min.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css"; 
+
+.demo-table ,.inner-tbl{
+  width: 100%;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.list-header{
+  background: #6fa8dc;
+  color: #fff;
+  padding: 8px 10px;
+  text-align: right!important;
+  }
+  .btn-theme1{
+    background-color: orange;    color: #444 !important;
+    }
+    .btn-theme2{
+      background-color: #f3f3f3;
+    }
+  .invertfilter{
+    filter: invert(1);
+  }
+  .a-tleft-bdr{
+    /* border-top-left-radius:30px;     */
+    
+  }
+  .a-tright-bdr{
+    /* border-top-right-radius:30px;     */
+  }
+  .a-bleft-bdr{
+    /* border-bottom-left-radius:30px;     */
+  }
+  .a-bright-bdr{
+    /* border-bottom-right-radius:30px;     */
+  }
+  .panel{
+    background: transparent;
+    border-color: transparent;
+  
+  }
+  .bdr1{
+    /* border:1px solid #19798c; */
+    padding: 0;
+    overflow: hidden;
+  }
+  .card {
+    margin-bottom: 0px!important;
+    /* background-color: #f3f3f3 */
+
+    ;
+  }
+  .row-eq-height{
+    margin-bottom: 5px!important;
+  }
+  .form-container{ margin-top: 1em;
+     width: 100%;justify-content: center;
+    }
+    .form-container mat-label{
+      text-transform: uppercase;
+      }
+      .form-container button{
+        margin-right: 8px;
+      }
+      .mat-toolbar.mat-primary {
+        background: #6f98db !important;
+        color: white;
+      }
+      .mat-toolbar {
+        justify-content: end;
+      }
+   
